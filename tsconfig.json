@@ -1,0 +1,17 @@
+{
+    "version": "2.0.2",
+    "compilerOptions": {
+        "target": "es5",
+        "module": "amd",
+        "lib": [
+            "es6",
+            "dom",
+            "dom.iterable"
+        ],
+        "outDir": "dist"
+    },
+    "include": ["*.ts"],
+    "exclude": [
+        "node_modules", "dist"
+    ]
+}

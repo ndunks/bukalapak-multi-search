@@ -1,0 +1,15 @@
+{
+    "name": "Bukalapak Multi Search",
+    "version": "1.0",
+    "description": "Quick search on store from current search result",
+    "manifest_version": 2,
+    "permissions": ["https://www.bukalapak.com/"],
+    "browser_action": {
+        "default_title": "BL Quick Store Search.",
+        "default_popup": "popup.html"
+    },
+    "externally_connectable": {
+        "matches": ["https://www.bukalapak.com/*"]
+    },
+    "web_accessible_resources": ["dist/*"]
+ }
