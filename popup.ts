@@ -1,25 +1,32 @@
 const values = {};
 let tab: chrome.tabs.Tab;
 
+let inject = (e: MouseEvent) => {
+    let myId = location.host
+    let myscriptUrl = location.href.substr(0, location.href.indexOf(location.pathname)) + '/dist/inject.js#' +
+        encodeURIComponent( JSON.stringify(values) );
+    const actualCode = `
+    var s = document.createElement('script');
+    s.src = '${myscriptUrl}';
+    s.onload = function() {
+        window['_bms_values'] = JSON.parse(decodeURIComponent(this.src.substr(this.src.indexOf('#')+1)));
+        console.log(window['_bms_values']);
+        window['_bms_inject']();
+    };
+    (window.document.head || window.document.documentElement).appendChild(s);
+`;
+
+    chrome.tabs.executeScript(tab.id, {
+        code: actualCode
+    })
+
+}
+( document.querySelector('#ok_button') as HTMLButtonElement ).onclick = inject;
 chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     if (!tabs.length) return;
 
     tab = tabs[0];
-    let myId = location.host
-    let myscriptUrl = location.href.substr(0, location.href.indexOf(location.pathname)) + '/dist/inject.js';
-    const actualCode = `
-        var s = document.createElement('script');
-        s.src = '${myscriptUrl}#{${myId}}';
-        s.class='_bms_script';
-        s.onload = function() {
-            this.remove();
-        };
-        (window.document.head || window.document.documentElement).appendChild(s);
-  `;
-    chrome.tabs.executeScript(tab.id, {
-        code: actualCode,
-        frameId: 0
-    })
+
 
     document.querySelectorAll('input').forEach(
         (v) => {
@@ -32,17 +39,22 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     onValueChanged()
 
     chrome.runtime.onMessageExternal.addListener(
-        (msg, sender, response )=> {
+        (msg, sender, response) => {
             console.log("GOT MESSAGE", msg);
             response(values)
         }
     )
+    chrome.runtime.onMessage.addListener(
+        (msg, sender) => {
+            console.log("GOTTTTTTTTTTTTTTTTTT", msg);
 
+        }
+    )
 });
 function onValueChanged() {
     let query = Object.keys(values)
         .map((v, i, a) => `search[${v}]=${values[v]}`);
-    
+    chrome.runtime.sendMessage(values)
     chrome.tabs.executeScript(tab.id, {
         code:
             `window._bms_last_query = '/?${encodeURI(query.join('&'))}';

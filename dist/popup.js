@@ -1,16 +1,19 @@
 var values = {};
 var tab;
+var inject = function (e) {
+    var myId = location.host;
+    var myscriptUrl = location.href.substr(0, location.href.indexOf(location.pathname)) + '/dist/inject.js#' +
+        encodeURIComponent(JSON.stringify(values));
+    var actualCode = "\n    var s = document.createElement('script');\n    s.src = '" + myscriptUrl + "';\n    s.onload = function() {\n        window['_bms_values'] = JSON.parse(decodeURIComponent(this.src.substr(this.src.indexOf('#')+1)));\n        console.log(window['_bms_values']);\n        window['_bms_inject']();\n    };\n    (window.document.head || window.document.documentElement).appendChild(s);\n";
+    chrome.tabs.executeScript(tab.id, {
+        code: actualCode
+    });
+};
+document.querySelector('#ok_button').onclick = inject;
 chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
     if (!tabs.length)
         return;
     tab = tabs[0];
-    var myId = location.host;
-    var myscriptUrl = location.href.substr(0, location.href.indexOf(location.pathname)) + '/dist/inject.js';
-    var actualCode = "\n        var s = document.createElement('script');\n        s.src = '" + myscriptUrl + "#{" + myId + "}';\n        s.class='_bms_script';\n        s.onload = function() {\n            this.remove();\n        };\n        (window.document.head || window.document.documentElement).appendChild(s);\n  ";
-    chrome.tabs.executeScript(tab.id, {
-        code: actualCode,
-        frameId: 0
-    });
     document.querySelectorAll('input').forEach(function (v) {
         v.onchange = v.onkeyup = v.onpaste = inputChanged;
         if (localStorage[v.name]) {
@@ -23,10 +26,14 @@ chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
         console.log("GOT MESSAGE", msg);
         response(values);
     });
+    chrome.runtime.onMessage.addListener(function (msg, sender) {
+        console.log("GOTTTTTTTTTTTTTTTTTT", msg);
+    });
 });
 function onValueChanged() {
     var query = Object.keys(values)
         .map(function (v, i, a) { return "search[" + v + "]=" + values[v]; });
+    chrome.runtime.sendMessage(values);
     chrome.tabs.executeScript(tab.id, {
         code: "window._bms_last_query = '/?" + encodeURI(query.join('&')) + "';\n        document.querySelectorAll('._bmsqc').forEach(\n        v => v.href = v.parentElement.parentElement.parentElement.querySelector('.c-product-seller a').href\n             + _bms_last_query\n    )"
     });

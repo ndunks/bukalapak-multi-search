@@ -1,38 +1,27 @@
-console.log(this);
-(function () {
-    if (window['__bms_xhr_original']) {
-        console.warn("INJECT ALREADY LOADEDED");
+var template = "<a href=\"#\" class=\"_bmsqc c-btn c-btn--small c-btn--red c-btn--block\" target=\"_BLANK\">Search</a>";
+window['_bms_inject'] = function () {
+    if (!window['_bms_values']) {
+        console.error("No BMS VALUED");
         return;
     }
-    console.log("INJECT LOADEDED", window['_bmm_extension_id']);
-    var template = "\n<a href=\"#\" class=\"_bmsqc c-btn c-btn--small c-btn--red c-btn--block\" target=\"_BLANK\">Search</a>";
-    function runtime() {
-        document.querySelectorAll('.c-card__head-actions')
-            .forEach(function (v, i, a) {
-            if (!v.querySelector('._bmsqc')) {
-                v.innerHTML = v.innerHTML + template;
-            }
-        });
-    }
-    runtime();
-    var port = chrome.runtime.connect("ehbcnpfahanolggopnpiejmlcmlimhbp");
-    console.log(port);
-    port.onMessage.addListener(function (msg, p) {
-        console.log("Got messagefrom popup", msg);
-    });
-    port.postMessage("INJET CONECTED");
-    window['__bms_xhr_original'] = XMLHttpRequest.prototype.open;
-    XMLHttpRequest.prototype.open = function () {
-        var method = arguments[0];
-        var url = arguments[1];
-        if (url.indexOf('/search/headings/product') >= 0) {
-            this.addEventListener('load', function () {
-                runtime();
-            });
+    var query = Object.keys(window['_bms_values'])
+        .map(function (v, i, a) { return "search[" + v + "]=" + window['_bms_values'][v]; });
+    document.querySelectorAll('.c-card__head-actions').forEach(function (v, i, a) {
+        if (!v.querySelector('._bmsqc')) {
+            v.innerHTML = v.innerHTML + template;
         }
-        window['__bms_xhr_original'].apply(this, arguments);
-    };
+    });
+    document.querySelectorAll('._bmsqc').forEach(function (v, i, a) {
+        v.href = v.parentElement.parentElement.parentElement.querySelector('.c-product-seller a').href + query;
+    });
+};
+if (!window['_bms_listener']) {
+    window['_bms_listener'];
     window.addEventListener('message', function (e) {
         console.log("WINDOWS GOT MESSAGE", e.data);
+        if (e.data && e.data.eventId && !e.data.value) {
+            // got reload trigered?
+            window['_bms_inject']();
+        }
     });
-})();
+}

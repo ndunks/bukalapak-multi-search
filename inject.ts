@@ -1,49 +1,37 @@
-console.log(this);
-(function () {
-    if (window['__bms_xhr_original']) {
-        console.warn("INJECT ALREADY LOADEDED");
+
+let template = `<a href="#" class="_bmsqc c-btn c-btn--small c-btn--red c-btn--block" target="_BLANK">Search</a>`;
+
+
+window['_bms_inject'] = () => {
+    if(!window['_bms_values']){
+        console.error("No BMS VALUED");
         return;
     }
-    console.log("INJECT LOADEDED", window['_bmm_extension_id']);
-
-    let template = `
-<a href="#" class="_bmsqc c-btn c-btn--small c-btn--red c-btn--block" target="_BLANK">Search</a>`
-
-    function runtime() {
-        
-        document.querySelectorAll('.c-card__head-actions')
-            .forEach(
-                (v, i, a) => {
-                    if(!v.querySelector('._bmsqc')){
-                        v.innerHTML = v.innerHTML + template;
-                    }
-                }
-            )
-    }
-    
-    runtime();
-    let port = chrome.runtime.connect("ehbcnpfahanolggopnpiejmlcmlimhbp");
-    console.log(port);
-    port.onMessage.addListener(
-        (msg,p) => {
-            console.log("Got messagefrom popup", msg);
+    let query = Object.keys(window['_bms_values'])
+        .map((v, i, a) => `search[${v}]=${window['_bms_values'][v]}`);
+    document.querySelectorAll('.c-card__head-actions').forEach(
+        (v, i, a) => {
+            if(!v.querySelector('._bmsqc')){
+                v.innerHTML = v.innerHTML + template;
+            }
         }
     )
-    port.postMessage("INJET CONECTED")
-    
-    window['__bms_xhr_original'] = XMLHttpRequest.prototype.open;
-    XMLHttpRequest.prototype.open = function () {
-        
-        let method = arguments[0] as string;
-        let url = arguments[1] as string;
-        if(url.indexOf('/search/headings/product') >= 0 ){
-            this.addEventListener('load', function () {
-                runtime();
-            });
+    document.querySelectorAll('._bmsqc').forEach(
+        (v:HTMLLinkElement,i,a) => {
+            v.href = (
+                v.parentElement.parentElement.parentElement.querySelector('.c-product-seller a') as HTMLLinkElement
+                ).href  + query;
         }
-        window['__bms_xhr_original'].apply(this, arguments);
-    };
+    )
+};
+
+if(!window['_bms_listener']){
+    window['_bms_listener'];
     window.addEventListener('message', (e) => {
         console.log("WINDOWS GOT MESSAGE", e.data);
-    })
-})()
+        if(e.data && e.data.eventId && !e.data.value){
+            // got reload trigered?
+            window['_bms_inject']()
+        }
+    });
+}

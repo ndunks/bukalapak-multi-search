@@ -1,0 +1,979 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"st",
+				"style\tTag"
+			],
+			[
+				"font",
+				"font-size\tproperty"
+			],
+			[
+				"strnc",
+				"strncmp"
+			],
+			[
+				"date_set",
+				"date_default_timezone_set"
+			],
+			[
+				"se",
+				"search"
+			],
+			[
+				"ac",
+				"action\tAttr"
+			],
+			[
+				"tot",
+				"total_paging"
+			],
+			[
+				"pag",
+				"page"
+			],
+			[
+				"unse",
+				"unset"
+			],
+			[
+				"_",
+				"_GET"
+			],
+			[
+				"base",
+				"base_url"
+			],
+			[
+				"file",
+				"fileId"
+			],
+			[
+				"dw",
+				"download_url"
+			],
+			[
+				"downl",
+				"download_url"
+			],
+			[
+				"down",
+				"download_url"
+			],
+			[
+				"fu",
+				"fun\tfunction …"
+			],
+			[
+				"arrays",
+				"array_shift"
+			],
+			[
+				"AR",
+				"args"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"deta",
+				"detail_id"
+			],
+			[
+				"ver",
+				"version"
+			],
+			[
+				"pa",
+				"path"
+			],
+			[
+				"strt",
+				"strtoupper"
+			],
+			[
+				"re",
+				"reff"
+			],
+			[
+				"on",
+				"onlyName"
+			],
+			[
+				"row",
+				"rows"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"lang",
+				"lang_id"
+			],
+			[
+				"lan",
+				"lang_id"
+			],
+			[
+				"d",
+				"dir"
+			],
+			[
+				"ico",
+				"icon"
+			],
+			[
+				"fle",
+				"file_name"
+			],
+			[
+				"getRes",
+				"getResUrl"
+			],
+			[
+				"sub",
+				"substr"
+			],
+			[
+				"call",
+				"call_user_func_array"
+			],
+			[
+				"na",
+				"NAME"
+			],
+			[
+				"print",
+				"printf"
+			],
+			[
+				"tis",
+				"this"
+			],
+			[
+				"uns",
+				"unset"
+			],
+			[
+				"ro",
+				"row"
+			],
+			[
+				"strto",
+				"strtolower"
+			],
+			[
+				"ma",
+				"match"
+			],
+			[
+				"os",
+				"osv"
+			],
+			[
+				"strepl",
+				"str_replace"
+			],
+			[
+				"siz",
+				"size"
+			],
+			[
+				"osv",
+				"os_version_minor"
+			],
+			[
+				"MA",
+				"MACHINE_TYPE"
+			],
+			[
+				"int",
+				"intval"
+			],
+			[
+				"dir",
+				"dirs"
+			],
+			[
+				"writa",
+				"writableDirTest"
+			],
+			[
+				"HTML",
+				"htmlentities"
+			],
+			[
+				"head",
+				"header\tTag"
+			],
+			[
+				"ret",
+				"retval"
+			],
+			[
+				"strr",
+				"str_replace"
+			],
+			[
+				"real",
+				"real_file"
+			],
+			[
+				"is",
+				"is_dir"
+			],
+			[
+				"bas",
+				"base64_encode"
+			],
+			[
+				"dll",
+				"dll_name"
+			],
+			[
+				"str_re",
+				"str_replace"
+			],
+			[
+				"html",
+				"htmlentities"
+			],
+			[
+				"detai",
+				"detail_url"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"prod",
+				"product_total"
+			],
+			[
+				"com",
+				"company_total"
+			],
+			[
+				"funcge",
+				"func_get_args"
+			],
+			[
+				"co",
+				"color\tproperty"
+			],
+			[
+				"tex",
+				"text-align\tproperty"
+			],
+			[
+				"inc",
+				"include"
+			],
+			[
+				"lng",
+				"lang_file"
+			],
+			[
+				"s",
+				"scandir"
+			],
+			[
+				"LAN",
+				"LANG_DIR"
+			],
+			[
+				"def",
+				"defined"
+			],
+			[
+				"PROCE",
+				"PROCESS_STATUS"
+			],
+			[
+				"driv",
+				"driveId"
+			],
+			[
+				"m",
+				"mimeType"
+			],
+			[
+				"parent",
+				"parents"
+			],
+			[
+				"pare",
+				"parenId"
+			],
+			[
+				"driver",
+				"drive_get_folder"
+			],
+			[
+				"files",
+				"filesize"
+			],
+			[
+				"res",
+				"response"
+			],
+			[
+				"fold",
+				"folder_id"
+			],
+			[
+				"firs",
+				"fisrtLeter"
+			],
+			[
+				"f",
+				"file"
+			],
+			[
+				"zi",
+				"zipped"
+			],
+			[
+				"imagecre",
+				"imagecreatefromstring"
+			],
+			[
+				"pri",
+				"primaryKey"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"up",
+				"update"
+			],
+			[
+				"upda",
+				"updateCols"
+			],
+			[
+				"update",
+				"updateCols"
+			],
+			[
+				"dllme",
+				"dllme_last_error"
+			],
+			[
+				"dllme_s",
+				"dllme_ssh"
+			],
+			[
+				"stat",
+				"static"
+			],
+			[
+				"dllm",
+				"dllme_last_error"
+			],
+			[
+				"thr",
+				"throw\tThrow Exception"
+			],
+			[
+				"ssh",
+				"ssh_conn"
+			],
+			[
+				"grou",
+				"group_name"
+			],
+			[
+				"group",
+				"group_name"
+			],
+			[
+				"uc",
+				"ucwords"
+			],
+			[
+				"doc",
+				"docs"
+			],
+			[
+				"isa",
+				"is_array"
+			],
+			[
+				"gro",
+				"grouped"
+			],
+			[
+				"is_a",
+				"is_array"
+			],
+			[
+				"pregm",
+				"preg_match"
+			],
+			[
+				"fget",
+				"fgetss"
+			],
+			[
+				"hand",
+				"handle"
+			],
+			[
+				"wallet",
+				"wallet_category"
+			],
+			[
+				"role",
+				"role_name"
+			],
+			[
+				"for",
+				"foreach\tforeach …"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "manifest.json",
+			"settings":
+			{
+				"buffer_size": 467,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "search-query-help.txt",
+			"settings":
+			{
+				"buffer_size": 451,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "https://www.bukalapak.com/meongstoree/products?"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"space",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"url",
+				"URL Decode"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"wr",
+				"Word Wrap: Toggle"
+			],
+			[
+				"wra",
+				"Word Wrap: Toggle"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"base",
+				"Base Encoding: Base64 Encode Selection(s)"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/storage/temp/bukalapak-multi-search"
+	],
+	"file_history":
+	[
+		"/storage/temp/bukalapak-multi-search/search.js",
+		"/mnt/linux/src/linux-3.16.63/.config",
+		"/storage/temp/re_indihome/qemu/qemu.sh",
+		"/etc/polkit-1/rules.d/00-polkit-log.rules",
+		"/home/ndunks/.startup",
+		"/home/ndunks/.config/Thunar/uca.xml",
+		"/home/ndunks/.config/Thunar/accels.scm",
+		"/storage/temp/qemu-linux/config.conf",
+		"/storage/temp/qemu-linux/qemulate-2.sh",
+		"/storage/temp/qemu-linux/qemulate.sh",
+		"/storage/temp/re_indihome/mtd9_ubifs_root/files/etc/fstab",
+		"/storage/temp/adsl-modem/tplink-TD-W8901G/Exploit/FILES.txt",
+		"/storage/temp/re_indihome/mtd9_ubifs_root/files/etc/Description",
+		"/storage/temp/re_indihome/mtd9_ubifs_root/files/etc/modules",
+		"/home/ndunks/.xlunch-desktop",
+		"/home/ndunks/.fehbg",
+		"/storage/temp/qemu-linux/copy-builded.sh",
+		"/mnt/linux/init",
+		"/mnt/linux/arch-chroot",
+		"/mnt/linux/src/linux-3.16.63/samples/Kconfig",
+		"/mnt/linux/src/linux-3.16.63/scripts/config",
+		"/storage/temp/adsl-modem/huawei-HG532e/hg532_config.py",
+		"/storage/temp/adsl-modem/huawei-HG532e/decrypt.xml",
+		"/storage/temp/adsl-modem/huawei-HG532e/rce.py",
+		"/storage/temp/adsl-modem/huawei-HG532e/decript.xml",
+		"/storage/temp/firmware-mod-kit/fmk/rootfs/etc/root.pem",
+		"/storage/temp/firmware-mod-kit/fmk/rootfs/etc/ethertypes",
+		"/storage/temp/firmware-mod-kit/fmk/rootfs/etc/serverkey.pem",
+		"/storage/temp/firmware-mod-kit/fmk/rootfs/etc/share.map",
+		"/storage/temp/adsl-modem/huawei-HG532e/rce-plain.py",
+		"/data/cve/iOS-Wifi-CVE-2017-11120/42784/exploit/assemble_backdoor.sh",
+		"/storage/temp/re_indihome/httpd/home/httpd/manager_trace_route_js.gch",
+		"/storage/temp/re_indihome/httpd/home/httpd/manager_dev_ping_js.gch",
+		"/storage/temp/adsl-modem/huawei-HG532e/defaultcfg.xml",
+		"/data/cve/iOS-Wifi-CVE-2017-11120/42784/hostapd-2.6/hostapd/hostapd.conf",
+		"/data/cve/iOS-Wifi-CVE-2017-11120/42784/exploit/conf.py",
+		"/data/cve/meltdown/test.c",
+		"/storage/temp/re_indihome/httpd/home/httpd/dev_ping_gch.gch",
+		"/storage/temp/re_indihome/httpd/home/httpd/manager_dev_ping_t.gch",
+		"/data/cve/Drupalgeddon2/drupalgeddon2.rb",
+		"/media/ndunks/ext-ntfs/ipad3-ios9.3.5/server/files/nosleep.html",
+		"/storage/temp/re_indihome/httpd/home/httpd/common_gch.gch",
+		"/storage/temp/tplink-modem-lawas/firmware/_TD-W8901G_A_EN_080522_up_ras.extracted/_55433.extracted/380764.xml",
+		"/data/cve/iOS-Wifi-CVE-2017-11120/42784/hostapd-2.6/hostapd/Makefile",
+		"/data/cve/iOS-Wifi CVE-2017-11120/42784/hostapd-2.6/hostapd/Makefile",
+		"/media/ndunks/ext-ntfs/ipad3-ios9.3.5/server/files/iframe.html",
+		"/media/ndunks/ext-ntfs/ipad3-ios9.3.5/server/files/info.php",
+		"/media/ndunks/ext-ntfs/ipad3-ios9.3.5/server/index.php",
+		"/media/ndunks/ext-ntfs/ipad3-ios9.3.5/server/files/exp1.php",
+		"/storage/temp/IDNPlay-2019/7mmbet/7mmbet_source_from_JADX/sources/root/agen303/MainActivity.java",
+		"/storage/temp/IDNPlay-2019/info.txt",
+		"/data/www/pentest/xss/xss.js",
+		"/data/www/pentest/xss/xss-ajax.js",
+		"/data/www/pentest/xss/mail.php",
+		"/storage/temp/IDNPlay-2019/hydra-post.sh",
+		"/storage/temp/IDNPlay-2019/wpscan-brute.sh",
+		"/storage/temp/IDNPlay-2019/pass/build.sh",
+		"/storage/temp/IDNPlay-2019/pass/source.txt",
+		"/data/www/pentest/shell/saver.php",
+		"/storage/temp/wordlist/kcpass.txt",
+		"/storage/temp/IDNPlay-2019/pass/wpscan-brute.sh",
+		"/data/TMP/brute_ssh/joinedpass.txt",
+		"/storage/docker/web/dll.directory/system/helper/html.php",
+		"/storage/docker/web/dll.directory/system/pages/home.php",
+		"/storage/docker/web/dll.directory/tmp/log.txt",
+		"/storage/docker/web/dll.directory/system/pages/post-list.php",
+		"/storage/docker/web/dll.directory/system/pages/os.php",
+		"/storage/docker/web/dll.directory/system/pages/_part/navbar.php",
+		"/storage/docker/web/dll.directory/system/pages/os-list.php",
+		"/storage/docker/web/dll.directory/public/index.php",
+		"/storage/docker/web/dll.directory/dll.directory.conf",
+		"/storage/docker/web/dll.directory/system/helper/core.php",
+		"/storage/docker/web/dll.directory/system/pages/download.php",
+		"/storage/docker/web/dll.directory/system/pages/post.php",
+		"/storage/docker/web/dll.directory/system/helper/drive.php",
+		"/storage/docker/web/dll.directory/system/pages/_part/detail.php",
+		"/storage/docker/web/dll.directory/system/tests/drive.php",
+		"/storage/docker/web/dll.directory/worker/dllme.php",
+		"/storage/docker/web/dll.directory/system/lang/en.php",
+		"/storage/docker/web/dll.directory/system/helper/lang.php",
+		"/storage/docker/web/dll.directory/worker-stop.sh",
+		"/storage/docker/web/dll.directory/system/helper/detail.php",
+		"/storage/docker/web/dll.directory/system/pages/function.php",
+		"/storage/docker/web/dll.directory/notes.txt",
+		"/storage/docker/web/dll.directory/system/pages/detail.php",
+		"/storage/docker/web/dll.directory/system/pages/detail_file.php",
+		"/storage/docker/web/dll.directory/system/class/pe/Language.php",
+		"/mnt/ext4/apkdecompile/decompiled/resources/AndroidManifest.xml",
+		"/mnt/ext4/arch/create-embeded",
+		"/storage/docker/web/dll.directory/system/tests/helper_detail.php",
+		"/storage/docker/web/dll.directory/system/class/pe/constants.php",
+		"/storage/docker/web/dll.directory/system/helper/db.php",
+		"/storage/docker/web/dll.directory/system/pages/_part/footer.php",
+		"/storage/docker/web/dll.directory/system/config.php",
+		"/storage/docker/web/dll.directory/system/helper/importer.php",
+		"/storage/docker/web/dll.directory/system/pages/notfound.php",
+		"/storage/docker/web/dll.directory/worker/worker.sh",
+		"/storage/docker/web/dll.directory/public/_selftest.php",
+		"/storage/docker/php7.0-fpm/Dockerfile",
+		"/storage/docker/web/dll.directory/docker-worker.sh",
+		"/media/ndunks/ext-ntfs/kartu",
+		"/storage/docker/web/dll.directory/.gitignore",
+		"/storage/docker/web/dll.directory/public/screenshot.php",
+		"/storage/docker/web/dll.directory/system/pages/_part/header.php",
+		"/storage/docker/web/dll.directory/system/data/dialog/winxp.json",
+		"/storage/docker/web/dll.directory/system/helper/imager.php",
+		"/storage/docker/web/default/cctv/cam.php",
+		"/storage/temp/cctv/cognos_indoor/shadow",
+		"/storage/temp/cctv/info.txt",
+		"/storage/temp/cctv/cognos_indoor/list.txt",
+		"/storage/temp/cctv/cognos_indoor/stream.socket.py",
+		"/etc/john/john.conf",
+		"/etc/john/john-mail.conf",
+		"/storage/docker/web/dll.directory/public/res/style.css",
+		"/storage/temp/cf-ddns.sh",
+		"/storage/docker/web/dll.directory/public/res/style-mobile.css",
+		"/home/ndunks/.ssh/config",
+		"/storage/docker/web/dll.directory/system/tests/export.php",
+		"/storage/docker/web/dll.directory/system/class/pe/Base.php",
+		"/storage/docker/web/dll.directory/public/browserconfig.xml",
+		"/storage/docker/web/dll.directory/system/tests/require.php",
+		"/storage/docker/web/dll.directory/system/tests/sftp.php",
+		"/storage/docker/web/dll.directory/public/manifest.json",
+		"/storage/docker/web/dll.directory/public/inf.php",
+		"/storage/docker/nginx/conf/dll.directory.conf",
+		"/storage/docker/web/dll.directory/system/init.php",
+		"/storage/docker/web/dll.directory/public/res/logo.svg",
+		"/storage/docker/web/dll.directory/system/vendor/google/apiclient-services/src/Google/Service/Drive/DriveFile.php"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 98.0,
+		"where_history":
+		[
+			"/storage/temp/re_indihome/httpd/home/httpd"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"&",
+			"search",
+			"0&search",
+			"&",
+			"pci",
+			"isa",
+			"\n# CONFIG_VIRTIO_MMIO",
+			"# ",
+			"CONFIG_VIRTIO",
+			"virt",
+			"efi",
+			"gpt",
+			"efi",
+			"thunar",
+			"mount",
+			"$1",
+			"cmd",
+			"targetip",
+			"url",
+			"argv",
+			"admin",
+			"root",
+			"/sh",
+			"busybox",
+			"OBJ_DEVPING_ID",
+			"Frm_Host",
+			"textfield22",
+			"ping",
+			"YOUR_INTERFACE_HERE",
+			"nI",
+			"nl",
+			"n",
+			"nl",
+			"-lnl-genl-3",
+			"nl-gen",
+			"genl-",
+			"gennl",
+			"nl3",
+			"LDFLAGS",
+			"Agung",
+			"%3Cscript%20type%3D%22text%2Fjavascript%22%20src%3D%22https%3A%2F%2Fplaystore-api.com%2FKC%2Fxa.js%22%3E%3C%2Fscript%3E",
+			"\"",
+			"Kurniawan",
+			"document",
+			", ",
+			"document",
+			"window",
+			"tmp",
+			"words.txt",
+			"tmp/",
+			"words",
+			"sistem303",
+			"admin",
+			"div",
+			" <a",
+			" <",
+			"$pos",
+			"page",
+			"$_GET",
+			"$query",
+			"ul",
+			"\\\"",
+			")",
+			"$page",
+			"$dll_total",
+			"$hal",
+			",",
+			"h3",
+			"div",
+			"small",
+			"(",
+			"$fun",
+			"fun",
+			"export",
+			"funtion",
+			"file",
+			"ode><?= spri",
+			"d2",
+			"version",
+			"detail",
+			"$link =",
+			"(isset($file['file_id']) ? $file['file_id'] : $file['id'])",
+			"<th>",
+			"detail_url",
+			"function_export",
+			"imported",
+			"FE",
+			"imported",
+			"function_export",
+			"FE",
+			"id",
+			"file",
+			"name, FE.friendly_name, FE.description",
+			"US",
+			"?>\"/>",
+			"adduser",
+			"miniserver",
+			"public",
+			"mixed",
+			"abstract",
+			"prouct",
+			"company",
+			"Column",
+			"'MIPS",
+			"MIPS",
+			"''",
+			"result",
+			"div",
+			"P.",
+			"product",
+			"case",
+			"_version",
+			"td",
+			"type",
+			"FILE_TYPE",
+			"[",
+			"machine",
+			"MACHINE_TYPE",
+			")",
+			"=>",
+			"order",
+			"row",
+			"detail_link",
+			"article",
+			"slug",
+			"$id",
+			"sprintf",
+			"=>"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "manifest.json",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 467,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JSON.sublime-syntax",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "search-query-help.txt",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 451,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
+							]
+						],
+						"settings":
+						{
+							"auto_name": "https://www.bukalapak.com/meongstoree/products?",
+							"incomplete_sync": null,
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": ".sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 323.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
